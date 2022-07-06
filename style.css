@@ -1,0 +1,158 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+    padding: 0.5rem;
+    background-color: rgb(36, 36, 36);
+}
+
+.flex{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    height: 20vh;
+}
+
+.flex a{
+    color: brown;
+    font-size: 1.8vw;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.flex .box{
+    width: 100px;
+    height: 40px;
+    align-self: center;
+    align-content: center;
+    margin-right: 10px;
+}
+
+.flex .box:nth-child(3){
+    flex-grow: 2;
+}
+
+/* grid section */
+
+.grid{
+    background-color: blue;
+    margin-top: 5rem;
+    padding: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(5, 1fr); */
+    gap: 1rem;
+}
+
+.grid .box{
+    background-color: gray;
+    text-align: center;
+}
+
+.grid .box a{
+    columns: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+}
+
+/* gallery section */
+
+.gallery{
+    margin-top: 5rem;
+    background-color: rgba(24, 24, 24, 0.563);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.gallery .card{
+    background-image: linear-gradient(to top right, darkslateblue, rgb(97, 92, 128));
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.gallery .card .img{
+    width: 90%;
+    height: 40vh;
+    border-radius: 5px;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.3s ease-in;
+}
+
+.gallery .card .img:hover{
+    width: 88%;
+    height: 38vh;
+}
+
+.gallery .card .one{
+    background-image: url("./images/IMG_1841.JPG");
+}
+
+.gallery .card .two{
+    background-image: url("./images/IMG_1845.JPG");
+}
+
+.gallery .card .three{
+    background-image: url("./images/IMG_1846.JPG");
+}
+
+.gallery .card .four{
+    background-image: url("./images/IMG_1848.JPG");
+}
+
+.gallery .card .five{
+    background-image: url("./images/Loki\,\ Gabriel\ Soares.png");
+}
+
+.gallery .card .six{
+    background-image: url("./images/Gus\ Fring\ \(Breaking\ Bad\)\ -\ Stylized\ sculpt\,\ Geosyrup.jpeg");
+}
+
+.gallery .card .seven{
+    background-image: url("./images/Millionaires\ Files.jpeg");
+}
+
+.gallery .card .eight{
+    background-image: url("./images/marcos-ferreira-QYBVbwJYxNA-unsplash.jpg");
+}
+
+.gallery .card .desc{
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+.gallery .card .desc h3{
+    color: darksalmon;
+    font-size: 2vw;
+    margin-bottom: 0.5rem;
+}
+
+.gallery .card .likes{
+    display: flex;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    justify-content: space-between;
+}
+
+.gallery .card .likes button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    transition: 0.4s ease-in;
+}
+
+.gallery .card .likes button:hover{
+    background-color: darksalmon;
+}

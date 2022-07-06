@@ -1,0 +1,10 @@
+FLEX & GRID
+
+Flex
+
+
+Grid-
+gap = margin-right
+
+Image Card-
+After designin the Image Card use positioning to  addd properties to it.
